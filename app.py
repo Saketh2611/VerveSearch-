@@ -44,7 +44,7 @@ top_k = st.slider("📊 Number of results to retrieve", min_value=1, max_value=1
 
 min_score = st.slider("📏 Minimum similarity score", min_value=0.0, max_value=1.0, value=0.5, step=0.05)
 
-keyword_filter = st.text_input("🔤 Filter results by keyword (optional)", placeholder="e.g., anxiety, school, pressure")
+keyword_filter = st.text_input("🔤 Filter results by keyword (optional)", placeholder="e.g., anxiety, school, pressure,sports")
 
 # -----------------------------
 # 🚀 Perform Search
