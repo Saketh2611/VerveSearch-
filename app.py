@@ -78,6 +78,16 @@ if st.button("Search") and query.strip():
             st.markdown(f"**Context:** {result.payload.get('context', '-')}")
             st.markdown(f"**Response:** {result.payload.get('response', '-')}")
             st.markdown(f"**Similarity Score:** `{result.score:.4f}`")
+
+    # ✅ Feedback buttons
+            col1, col2 = st.columns(2)
+            with col1:
+                    if st.button(f"👍 Relevant", key=f"yes_{i}"):
+                       st.success(f"Marked Result {i} as Relevant")
+            with col2:
+                    if st.button(f"👎 Not Relevant", key=f"no_{i}"):
+                       st.warning(f"Marked Result {i} as Not Relevant")
+
             st.markdown("---")
     else:
         st.warning("No results found with the selected filters.")
