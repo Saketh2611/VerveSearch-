@@ -36,6 +36,10 @@ This project is a natural language search engine that helps retrieve the most re
 | ☁️ Hosting | Streamlit Community Cloud |
 
 ---
+## User provides feedback:
+   - 👍 Mark as relevant
+   - 👎 Mark as not relevant
+---
 
 ## 📁 Folder Structure
 
